@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root{
+    --primary:#3DCFD3;
+    --Secondry:#898989;
+    --darkBG:#353535;
+    --lightBG:#ffffff;
+    --secBG:#F2F2F2;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+.section-padding{
+    padding: 60px 0px;
+}
+h1 {
+    font-size: 53px;
+    color: var(--secBG);
+}
+h1 span{
+    color: var(--primary);
+}
+.section-title {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.section-title span{
+    color: var(--primary);
+}
+.section-text{
+    margin-bottom: 60px !important;
+}
+h6{
+    font-size: 22px;
+}
+p{
+    font-size: 14px;
+    line-height: 30px;
+}
+.my-button{
+    color: var(--lightBG);
+    border: 2px solid;
+    border-color: var(--primary);
+    background-color: var(--primary);
+    padding: 9px 23px;
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.my-button:hover{
+    background-color: #fff0;
+    color: var(--primary);
+}
+.banner-abs-image{
+    position: absolute;
+    bottom: -5px;
+}
+.top-title{
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*============mobile menu css============*/
+
+.checkbox {
+    transform: scale(1.8);
+    display: none;
+}
+.mobile-bars {
+    color: var(--primary);
+    display: none;
+}
+.mobile-cross {
+    color: var(--primary);
+    display: none;
+}
+
+/*============header css============*/
+
+header{
+    background-color: var(--darkBG);
+    padding: 23px 0px 10px 0px;
+    z-index: 9;
+}
+
+.header-light{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 130px;
+}
+header ul {
+    display: flex;
+    margin-bottom: 0;
+}
+header ul li{
+    margin-left: 35px;
+}
+header ul li a{
+    font-size: 16px;
+    color: #F2F2F2;
+    font-weight: bold;
+}
+header ul li a:hover{
+    color: var(--primary);
+}
+
+/*============banner css============*/
+
+.banner{
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--darkBG);
+}
+.banner-text h6 {
+    font-size: 22px;
+    color: var(--primary);
+}
+.banner-text p {
+    color: var(--secBG);
+}
+.banner-text button{
+    color: var(--primary);
+    border: 2px solid;
+    border-color: var(--primary);
+    background-color: #fff0;
+    padding: 9px 23px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: .5s;
+}
+.banner-text button:hover{
+    background-color: var(--primary);
+    color: var(--lightBG);
+}
+.banner-image img{
+    max-width: 60%;
+    display: block;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+}
+
+/*============about css============*/
+
+.about {
+    background-color: var(--lightBG);
+}
+.about-text h2 {
+    text-align: left;
+}
+.about-text h2 span{
+    color: var(--primary);
+}
+.about-text h6{
+    margin: 15px 0px;
+}
+.social-profile ul {
+    display: flex;
+}
+.social-profile ul li {
+    margin-right: 13px;
+}
+.social-profile ul li a{
+    color: var(--lightBG);
+    background-color: var(--darkBG);
+    font-size: 16px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50px;
+    transition: .5s;
+}
+.social-profile ul li a:hover{
+    background-color: var(--primary);
+}
+
+/*============service css============*/
+
+.service{
+    background-color: var(--secBG);
+}
+.all-service-items{
+    text-align: center;
+    margin-bottom: -20px;
+}
+.service-item{
+    display: inline-block;
+    width: 30%;
+    background-color: var(--lightBG);
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.service-item:hover{
+    background-color: var(--darkBG);
+    transition: .5s;
+}
+.service-item span{
+    margin: auto;
+    background-color: var(--primary);
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+    line-height: 95px;
+    margin-top: -56px;
+    margin-bottom: 25px;
+}
+.service-item h6{
+    text-align: center;
+    transition: .5s;
+}
+.service-item:hover h6 {
+    color: var(--secBG);
+}
+.service-item p{
+    color: var(--darkBG);
+}
+.service-item:hover p {
+    color: var(--secBG);
+    transition: .5s;
+}
+
+/*============call-to-action css============*/
+
+.call-to-action{
+    padding-bottom: 150px;
+    background-image: url(camera.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.call-to-action::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.call-to-action p {
+    margin-bottom: 30px;
+    color: var(--lightBG);
+}
+
+/*============client css============*/
+
+/*--------------Carousel--------------*/
+
+.carousel-section {
+    padding: 70px 0px;
+}
+.carousel-indicators {
+    margin-bottom: 0;
+    bottom: -35px;
+}
+.carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+.carousel {
+    margin-bottom: 0;
+}
+.carousel-inner {
+    height: auto;
+}
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+.control-icon {
+    font-size: 35px;
+}
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+.featurette-divider {
+    margin: 5rem 0;
+}
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+  /* CAROUSEL RESPONSIVE CSS */
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+    .featurette-heading {
+      font-size: 50px;
+    }
+}
+@media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+}
+
+/*------------------&-------------------*/
+
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightBG);
+}
+.client img{
+    width: 150px;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+}
+.client p {
+    width: 80%;
+    margin:auto;
+}
+.client h6 {
+    margin-top: 20px;
+}
+.control-icon{
+    color: var(--primary);
+}
+
+/*============blog css============*/
+
+.blog{
+    padding-bottom: 150px;
+    background-color: var(--darkBG);
+    position: relative;
+}
+.blog h2{
+    color: var(--secBG);
+}
+.blog .section-text {
+    color: var(--secBG);
+}
+.blog-item{
+    background-color: var(--lightBG);
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.blog-item:hover > img {
+    transform: scaleX(1.2);
+    transition: .5s;
+}
+.blog-item img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.blog-item p{
+    padding: 0 30px;
+    margin-bottom: 5px;
+}
+.blog-button{
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 30px;
+    color: var(--darkBG);
+    transition: .5s;
+}
+.blog-button:hover{
+    color: var(--primary);
+}
+
+/*============contect css============*/
+
+.contect {
+    background-color: var(--lightBG);
+}
+.contect a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    font-size: 75px;
+    margin-top: -25px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--darkBG);
+    transition: .5s;
+}
+.contect a:hover {
+    color: var(--primary);
+}
+.contect a:hover ~ .icon-title {
+    color: var(--primary);
+    transition: .5s;
+}
+.contect .icon-title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.contect .icon-text{
+    margin-top: -20px;
+}
+.contect form {
+    margin-top: 40px;
+}
+.contect form input {
+    font-size: 15px;
+}
+.contect form textarea {
+    font-size: 15px;
+}
+
+/*============footer css============*/
+
+footer{
+    background-color: var(--darkBG);
+}
+footer .social-profile {
+    margin-top: 20px;
+    margin-bottom: -7px;
+}
+footer p {
+    color: var(--secBG);
+    margin-bottom: -8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
